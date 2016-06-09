@@ -9,7 +9,7 @@
 //});
 
 
-var tl1 = new TimelineMax();
+var tl1 = new TimelineMax({ delay: .74 });
 
 tl1.from('#drawer', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Back.easeOut }, '-=.22')
 tl1.from('#leg', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Back.easeOut }, '-=.22')
