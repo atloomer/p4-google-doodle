@@ -9,7 +9,7 @@
 //});
 
 
-var tl1 = new TimelineMax({ delay: .74 });
+var tl1 = new TimelineMax({ delay: 1.35 });
 
 tl1.from('#drawer', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Back.easeOut }, '-=.22')
 tl1.from('#leg', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Back.easeOut }, '-=.22')
@@ -34,7 +34,7 @@ tl1.from('#vcd-text-05', .2, { opacity: 0 })
 tl1.from('#vcd-text-06', .2, { opacity: 0 })
 tl1.from('#vcd-text-07', .2, { opacity: 0 }, '=.14');
 
-var tl2 = new TimelineMax({ delay: 3, repeat: -1 });
+var tl2 = new TimelineMax({ delay: 4.3, repeat: -1 });
 
 tl2.from('.steam', 1, {x:0, y:2, z:0, opacity: 0, ease: Power0.easeOut }, '-=.5')
 tl2.to('.steam', 1.4, {x:0, y:-2.5, z:0, opacity: 0, ease: Power0.easeOut });
