@@ -23,7 +23,7 @@ tl1.from('#comp-screen', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Back.easeOut }
 tl1.from('#mouse', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Back.easeOut }, '-=.22')
 tl1.from('.coffee', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Power3.easeOut }, '-=.22')
 tl1.from('.lamp', 0.4, {x:0, y:-60, z:0, opacity: 0, ease: Power2.easeOut }, '-=.22')
-tl1.from('#light', 0.1, { opacity: 0 }, '=.75')
+tl1.from('#light', 0.23, { opacity: 0, ease: RoughEase.ease.config({ template: Power0.easeNone, strength: 1, points: 20, taper: "none", randomize: true, clamp: false}) }, '=.75')
 tl1.from('#bg-color', .7, { fill: '#384561' }, '=.1')
 tl1.from('#comp-screen', .6, { fill: '#2d2d2d' }, '=-.1')
 tl1.from('#vcd-text-01', .2, { opacity: 0 })
